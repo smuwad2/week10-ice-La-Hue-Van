@@ -25,7 +25,7 @@
             }
         },
         created() { // created is a hook that executes as soon as Vue instance is created
-            axios.get(`${this.baseUrl}/posts`)
+            axios.get(`${this.baseUrl}/post`)
             .then(response => {
                 // this gets the data, which is an array
                 this.posts = response.data
